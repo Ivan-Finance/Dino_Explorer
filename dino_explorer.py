@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Mar 11 18:27:36 2026
-
-@author: ivang
-"""
-
 import requests
 import random
 import textwrap
@@ -232,4 +225,5 @@ def dino_explorer():
     print("="*60 + "\n")
 
 if __name__ == "__main__":
+
     dino_explorer()
