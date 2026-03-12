@@ -1,21 +1,20 @@
-# DinoExplorer
+# 🦖 DinoExplorer
+A Python terminal application for exploring paleontological data in real-time.
+DinoExplorer was created to experiment with integrating different data sources into a single tool. The program combines a local database (for stable facts) with the Wikipedia and PaleoBioDB APIs (for dynamic data), organizing everything into a colorful, easy-to-read scientific dossier.
 
-DinoExplorer is a Python terminal-based encyclopedia for dinosaurs. It provides structured information on a variety of dinosaurs, including taxonomy, physical characteristics, fossil locations, geological range, and fun scientific facts. The program also displays images retrieved from Wikipedia when available.
+## Key Features
+• Smart Search: Search for a specific dinosaur or get a random selection for a surprise discovery.
+• Hybrid Data: Cross-references local taxonomic data with geographical locations and geological periods fetched from the web.
+• Visual Dossiers: Retrieves official descriptions and specimen images directly from Wikipedia.
+• Clean Interface: Uses colorama to structure data into color-coded sections, making terminal output much more readable.
 
-## Features
+## Tech Stack
+• Language: Python
+• Data Sources: PaleoBioDB and Wikipedia API.
+• Libraries: requests for web calls, Pillow for image handling, and colorama for the visual styling.
 
-- Random dinosaur selection or search by name
-- Taxonomic information (class, order, diet) from local dataset
-- Physical characteristics (length, height, weight)
-- Fossil discovery location and geological time range via PaleoBioDB
-- Summary description and images via Wikipedia API
-- Fun facts and interesting trivia for each dinosaur
-- Enhanced terminal output with colors and boxed sections for readability
-
-## Requirements
-
-- [requests](https://pypi.org/project/requests/)
-- [Pillow](https://pypi.org/project/Pillow/)
-- [colorama](https://pypi.org/project/colorama/)
+## 🚀 How to Run
+• Install the equired libraries:
+pip install requests Pillow colorama
 
 Feel free to add dinosaur stats and modify this file for personal or educational use!
