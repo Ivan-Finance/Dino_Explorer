@@ -15,7 +15,11 @@ def print_section(title):
 DINO_LIST = [
     "Tyrannosaurus", "Triceratops", "Stegosaurus", "Velociraptor",
     "Brachiosaurus", "Spinosaurus", "Allosaurus", "Ankylosaurus",
-    "Diplodocus", "Parasaurolophus", "Pachycephalosaurus", "Carnotaurus"
+    "Diplodocus", "Parasaurolophus", "Pachycephalosaurus", "Carnotaurus",
+    "Deinonychus", "Utahraptor", "Giganotosaurus", "Carcharodontosaurus",
+    "Iguanodon", "Edmontosaurus", "Corythosaurus", "Lambeosaurus", 
+    "Apatosaurus", "Argentinosaurus", "Camarasaurus", "Therizinosaurus",
+    "Oviraptor", "Dilophosaurus", "Microraptor"
 ]
 
 # Core biological data (stable taxonomy)
@@ -31,7 +35,22 @@ DINO_CORE_DATA = {
     "Diplodocus": {"class": "Reptilia", "order": "Saurischia", "diet": "Herbivore"},
     "Parasaurolophus": {"class": "Reptilia", "order": "Ornithischia", "diet": "Herbivore"},
     "Pachycephalosaurus": {"class": "Reptilia", "order": "Ornithischia", "diet": "Herbivore"},
-    "Carnotaurus": {"class": "Reptilia", "order": "Saurischia", "diet": "Carnivore"}
+    "Carnotaurus": {"class": "Reptilia", "order": "Saurischia", "diet": "Carnivore"},
+    "Deinonychus": {"class": "Reptilia", "order": "Saurischia", "diet": "Carnivore"},
+    "Utahraptor": {"class": "Reptilia", "order": "Saurischia", "diet": "Carnivore"},
+    "Giganotosaurus": {"class": "Reptilia", "order": "Saurischia", "diet": "Carnivore"},
+    "Carcharodontosaurus": {"class": "Reptilia", "order": "Saurischia", "diet": "Carnivore"},
+    "Iguanodon": {"class": "Reptilia", "order": "Ornithischia", "diet": "Herbivore"},
+    "Edmontosaurus": {"class": "Reptilia", "order": "Ornithischia", "diet": "Herbivore"},
+    "Corythosaurus": {"class": "Reptilia", "order": "Ornithischia", "diet": "Herbivore"},
+    "Lambeosaurus": {"class": "Reptilia", "order": "Ornithischia", "diet": "Herbivore"},
+    "Apatosaurus": {"class": "Reptilia", "order": "Saurischia", "diet": "Herbivore"},
+    "Argentinosaurus": {"class": "Reptilia", "order": "Saurischia", "diet": "Herbivore"},
+    "Camarasaurus": {"class": "Reptilia", "order": "Saurischia", "diet": "Herbivore"},
+    "Therizinosaurus": {"class": "Reptilia", "order": "Saurischia", "diet": "Herbivore"},
+    "Oviraptor": {"class": "Reptilia", "order": "Saurischia", "diet": "Omnivore"},
+    "Dilophosaurus": {"class": "Reptilia", "order": "Saurischia", "diet": "Carnivore"},
+    "Microraptor": {"class": "Reptilia", "order": "Saurischia", "diet": "Carnivore"}
 }
 
 # Encyclopedia information
@@ -131,7 +150,128 @@ LOCAL_DINO_DATA = {
         "height": "3 m",
         "weight": "1.3–2 tons",
         "fun_fact": "Recognizable by the horns above its eyes and extremely reduced forelimbs."
+    },
+    
+      "Deinonychus": {
+        "meaning": "Terrible claw",
+        "length": "3–3.5 m",
+        "height": "1.5 m",
+        "weight": "70–100 kg",
+        "fun_fact": "Its large sickle-shaped claw inspired the modern image of agile raptor dinosaurs."
+    },
+
+    "Utahraptor": {
+        "meaning": "Utah predator",
+        "length": "6–7 m",
+        "height": "2 m",
+        "weight": "500–700 kg",
+        "fun_fact": "The largest known dromaeosaurid, much bigger than Velociraptor."
+    },
+
+    "Giganotosaurus": {
+        "meaning": "Giant southern lizard",
+        "length": "12–13 m",
+        "height": "4 m",
+        "weight": "6–8 tons",
+        "fun_fact": "One of the largest carnivorous dinosaurs ever discovered."
+    },
+
+    "Carcharodontosaurus": {
+        "meaning": "Shark-toothed lizard",
+        "length": "12–13 m",
+        "height": "4 m",
+        "weight": "6–7 tons",
+        "fun_fact": "Named for its blade-like teeth resembling those of sharks."
+    },
+
+    "Iguanodon": {
+        "meaning": "Iguana tooth",
+        "length": "9–11 m",
+        "height": "5 m",
+        "weight": "3–5 tons",
+        "fun_fact": "One of the first dinosaurs ever scientifically described in the 19th century."
+    },
+
+    "Edmontosaurus": {
+        "meaning": "Edmonton lizard",
+        "length": "12–13 m",
+        "height": "4 m",
+        "weight": "4 tons",
+        "fun_fact": "Many fossils preserve impressions of skin, revealing a scaly texture."
+    },
+
+    "Corythosaurus": {
+        "meaning": "Helmet lizard",
+        "length": "9–10 m",
+        "height": "4 m",
+        "weight": "3 tons",
+        "fun_fact": "Its tall crest may have been used for visual display and sound resonance."
+    },
+
+    "Lambeosaurus": {
+        "meaning": "Lambe's lizard",
+        "length": "9–10 m",
+        "height": "4 m",
+        "weight": "2.5–3 tons",
+        "fun_fact": "Its hollow crest likely amplified vocal calls within the herd."
+    },
+
+    "Apatosaurus": {
+        "meaning": "Deceptive lizard",
+        "length": "21–23 m",
+        "height": "4–5 m",
+        "weight": "20–25 tons",
+        "fun_fact": "Previously confused with the dinosaur Brontosaurus in early classifications."
+    },
+
+    "Argentinosaurus": {
+        "meaning": "Argentina lizard",
+        "length": "30–35 m",
+        "height": "15 m",
+        "weight": "60–80 tons",
+        "fun_fact": "One of the largest land animals known to have ever existed."
+    },
+
+    "Camarasaurus": {
+        "meaning": "Chambered lizard",
+        "length": "18–20 m",
+        "height": "7 m",
+        "weight": "20 tons",
+        "fun_fact": "Its vertebrae contained hollow chambers that reduced body weight."
+    },
+
+    "Therizinosaurus": {
+        "meaning": "Scythe lizard",
+        "length": "9–10 m",
+        "height": "5 m",
+        "weight": "5 tons",
+        "fun_fact": "Famous for its enormous claws that could exceed one meter in length."
+    },
+
+    "Oviraptor": {
+        "meaning": "Egg thief",
+        "length": "1.5–2 m",
+        "height": "1 m",
+        "weight": "20–30 kg",
+        "fun_fact": "Originally thought to steal eggs, later fossils showed it was actually protecting its own nest."
+    },
+
+    "Dilophosaurus": {
+        "meaning": "Two-crested lizard",
+        "length": "6–7 m",
+        "height": "2 m",
+        "weight": "400 kg",
+        "fun_fact": "Recognizable by the pair of crests on its skull."
+    },
+
+    "Microraptor": {
+        "meaning": "Small thief",
+        "length": "0.8–1 m",
+        "height": "0.4 m",
+        "weight": "1 kg",
+        "fun_fact": "Had feathers on both arms and legs, allowing it to glide between trees."
     }
+
 }
 
 def dino_explorer():
@@ -227,3 +367,4 @@ def dino_explorer():
 if __name__ == "__main__":
 
     dino_explorer()
+
