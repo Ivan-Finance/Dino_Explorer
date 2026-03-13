@@ -8,7 +8,6 @@ DinoExplorer was created to experiment with integrating different data sources i
 - **Smart Search:** Search for a specific dinosaur or get a random selection for a surprise discovery.
 - **Hybrid Data:** Cross-references local taxonomic data with geographical locations and geological periods fetched from the web.
 - **Visual Dossiers:** Retrieves official descriptions and specimen images directly from Wikipedia.
-- **Clean Interface:** Uses `colorama` to structure data into color-coded sections, making terminal output much more readable.
 
 ## Tech Stack
 - **Language:** Python
