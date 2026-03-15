@@ -1,7 +1,7 @@
 # 🦕 Dino Explorer
 
 A terminal-based dinosaur encyclopedia built in Python.  
-Search for dinosaurs, compare them, explore random picks, and export detailed PDF dossiers — all from the command line.
+Search for dinosaurs, compare them, explore random picks, and export detailed PDF dossiers, all from the command line.
 
 ---
 
