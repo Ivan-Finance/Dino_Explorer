@@ -19,8 +19,8 @@ Search for dinosaurs, compare them, explore random picks, and export detailed PD
 
 Each dinosaur dossier pulls from two external APIs:
 
-- **Wikipedia REST API** — description and image
-- **PaleoBioDB API** — fossil site location and geological time range
+- **Wikipedia REST API**: description and image
+- **PaleoBioDB API**: fossil site location and geological time range
 
 Core data (taxonomy, physical characteristics, name meanings, fun facts) is stored locally for reliability and speed.
 
@@ -64,28 +64,6 @@ Tyrannosaurus, Triceratops, Stegosaurus, Velociraptor, Brachiosaurus, Spinosauru
 
 ---
 
-## Project Structure
-
-```
-dino_explorer.py   # Main script
-README.md          # This file
-```
-
-PDF files are saved in the same directory as the script, named `<dinosaur>_dossier.pdf`.
-
----
-
-## What I Learned / Practiced
-
-- Calling and parsing **REST APIs** (Wikipedia, PaleoBioDB)
-- Structuring a project with **separation of concerns** (data fetching, display, export as separate functions)
-- Terminal UI with **colorama** (colored output)
-- Generating **PDF files** with reportlab
-- **Input validation** and building an **interactive CLI loop**
-- Handling **network errors** gracefully with specific exception catching
-
----
-
 ## Requirements
 
 | Library | Purpose |
@@ -94,7 +72,3 @@ PDF files are saved in the same directory as the script, named `<dinosaur>_dossi
 | `Pillow` | Image display in terminal |
 | `colorama` | Colored terminal output |
 | `reportlab` | PDF generation |
-
----
-
-*Built as a Python practice project.*
