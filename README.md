@@ -11,7 +11,7 @@ Search for dinosaurs, compare them, explore random picks, and export detailed PD
 - **Random mode**: let the program pick a random dinosaur for you
 - **Compare** two dinosaurs side by side (diet, size, era, fossil sites)
 - **Export to PDF**: generates a formatted dossier with image, taxonomy, physical data, and description
-- **Interactive menu** with a loop — keeps running until you decide to exit
+- **Interactive menu** with a loop: keeps running until you decide to exit
 
 ---
 
