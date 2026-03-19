@@ -280,9 +280,7 @@ LOCAL_DINO_DATA = {
 
 }
 
-# ──────────────────────────────────────────────
 #  DATA FETCHING
-# ──────────────────────────────────────────────
 
 def fetch_paleodb(name):
     """Returns (location, era_range) from PaleoBioDB."""
@@ -344,9 +342,7 @@ def build_dino_data(name):
         "img_url": img_url,
     }
 
-# ──────────────────────────────────────────────
 #  DISPLAY
-# ──────────────────────────────────────────────
 
 def display_dino(d):
     print("\n" + "="*60)
@@ -418,9 +414,7 @@ def display_comparison(d1, d2):
     row("Fossil site",d1["location"],  d2["location"])
     print("="*70 + "\n")
 
-# ──────────────────────────────────────────────
 #  PDF EXPORT
-# ──────────────────────────────────────────────
 
 def sanitize(text):
     return text.encode("latin-1", errors = "replace").decode("latin-1")
@@ -535,9 +529,7 @@ def export_pdf(d):
 
     print(Fore.GREEN + f"\n  PDF saved as '{filename}' in the current directory.")
 
-# ──────────────────────────────────────────────
 #  INPUT HELPERS
-# ──────────────────────────────────────────────
 
 def ask_dino_name(prompt="Enter dinosaur name: "):
     while True:
@@ -547,9 +539,7 @@ def ask_dino_name(prompt="Enter dinosaur name: "):
         print(Fore.RED + f"  '{raw}' not recognised. Available dinosaurs:")
         print(Fore.YELLOW + "  " + ", ".join(DINO_LIST))
 
-# ──────────────────────────────────────────────
 #  MAIN MENU LOOP
-# ──────────────────────────────────────────────
 
 def print_menu():
     print(Fore.CYAN + "\n" + "═"*60)
